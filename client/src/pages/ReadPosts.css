@@ -5,3 +5,10 @@
     gap: 30px;
 }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+    grid-column: span 2; /* Span across both grid columns */
+    margin-bottom: 20px; /* Optional: Add some space below the search bar */
+}
+

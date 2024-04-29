@@ -8,7 +8,7 @@
     margin-bottom: 25px;
     width: 400px;
     text-align: center;
-}
+} 
 
 .title {
     color:white;
@@ -55,4 +55,23 @@
 }
 .moreButton:hover {
     cursor: pointer;
+}
+
+.Card {
+  /* Your existing styles */
+}
+
+/* Add a new class to style the comment section */
+.CommentSection {
+  margin-top: 10px;
+}
+
+.CommentSection input[type="text"] {
+  width: calc(100% - 80px); /* Adjust the width of the input field */
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.CommentSection button {
+  padding: 5px 10px;
 }

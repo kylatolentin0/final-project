@@ -1,11 +1,12 @@
 import './App.css';
 import React from 'react';
-import { useRoutes } from 'react-router-dom'
-import ReadPosts from './pages/ReadPosts'
-import CreatePost from './pages/CreatePost'
-import EditPost from './pages/EditPost'
-import { Link } from 'react-router-dom'
-
+import { useRoutes, Link } from 'react-router-dom';
+import ReadPosts from './pages/ReadPosts';
+import CreatePost from './pages/CreatePost';
+import EditPost from './pages/EditPost';
+import Card from './components/Card';
+import DetailPage from './pages/PostPage'; 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   
@@ -48,17 +49,18 @@ const App = () => {
   ]);
 
   return ( 
-
     <div className="App">
-
-      <div className="header">
-        <h1>👍 Bet 1.0</h1>
-        <Link to="/"><button className="headerBtn"> Explore Challenges 🔍  </button></Link>
-        <Link to="/new"><button className="headerBtn"> Submit Challenge 🏆 </button></Link>
-      </div>
-        {element}
+      <header className="topnav">
+        <h1>Your Favorite Music!</h1>
+        <nav>
+          <ul>
+            <li><Link to="/">Your Playlist</Link></li>
+            <li><Link to="/new">Add a Song</Link></li>
+          </ul>
+        </nav>
+      </header>
+      {element}
     </div>
-
   );
 }
 
