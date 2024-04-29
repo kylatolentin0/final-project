@@ -4,9 +4,6 @@ import { useRoutes, Link } from 'react-router-dom';
 import ReadPosts from './pages/ReadPosts';
 import CreatePost from './pages/CreatePost';
 import EditPost from './pages/EditPost';
-import Card from './components/Card';
-import DetailPage from './pages/PostPage'; 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   
